@@ -16,7 +16,6 @@ body {
 #love-container {
   position: relative;
   width: 95%;
-  max-width: 500px;
   background: rgba(255, 111, 145, 0.7);
   border-radius: 20px;
   padding: 30px;
