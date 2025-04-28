@@ -12,10 +12,9 @@ body {
   overflow: hidden;
 }
 
-/* Container untuk kotak cinta */
 #love-container {
   position: relative;
-  width: 95%;
+  width: 98%;
   background: rgba(255, 111, 145, 0.7);
   border-radius: 20px;
   padding: 30px;
@@ -24,16 +23,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-/* Text biasa */
-.confession-text {
-  font-size: 1.2em;
-  text-align: center;
+#confession-text {
+  font-size: 2em;
   color: white;
-  line-height: 1.6;
+  text-align: center;
+  transition: font-size 0.3s ease;
+  word-break: break-word;
+  overflow-y: auto;
+  max-height: 80%;
+  line-height: 1.8;
 }
-
 /* Loading screen */
 #loading-screen {
   position: fixed;
