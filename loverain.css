@@ -13,19 +13,26 @@ body {
 
 #love-container {
   position: relative;
-  width: 90%;
-  max-width: 400px;
-  height: 500px;
-  background: rgba(255, 111, 145, 0.7); /* Transparan 70% */
+  width: 95%;
+  max-width: 500px; /* dari 400px -> 500px */
+  height: auto; /* Biar tinggi fleksibel */
+  background: rgba(255, 111, 145, 0.7);
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px; /* dari 20px -> 30px */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  backdrop-filter: blur(5px);
+}
+
+.confession-text {
+  font-size: 1.2em; /* dari 1em -> 1.2em */
+  text-align: center;
+  color: white;
+  line-height: 1.6; /* biar jarak antar baris lebih enak dibaca */
+}
 }
 #loading-screen {
   position: fixed;
