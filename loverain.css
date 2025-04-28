@@ -1,3 +1,4 @@
+/* Basic setup untuk body */
 body {
   margin: 0;
   padding: 0;
@@ -11,29 +12,30 @@ body {
   overflow: hidden;
 }
 
+/* Container untuk kotak cinta */
 #love-container {
   position: relative;
   width: 95%;
-  max-width: 500px; /* dari 400px -> 500px */
-  height: auto; /* Biar tinggi fleksibel */
+  max-width: 500px;
   background: rgba(255, 111, 145, 0.7);
   border-radius: 20px;
-  padding: 30px; /* dari 20px -> 30px */
+  padding: 30px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
+/* Text biasa */
 .confession-text {
-  font-size: 1.2em; /* dari 1em -> 1.2em */
+  font-size: 1.2em;
   text-align: center;
   color: white;
-  line-height: 1.6; /* biar jarak antar baris lebih enak dibaca */
+  line-height: 1.6;
 }
-}
+
+/* Loading screen */
 #loading-screen {
   position: fixed;
   width: 100%;
@@ -48,6 +50,7 @@ body {
   z-index: 9999;
 }
 
+/* Text pengakuan utama */
 #confession-text {
   font-size: 1.8em;
   color: white;
@@ -58,10 +61,12 @@ body {
   max-height: 80%;
 }
 
+/* Class hidden */
 .hidden {
   display: none;
 }
 
+/* Tombol reveal */
 #reveal-button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -73,6 +78,7 @@ body {
   cursor: pointer;
 }
 
+/* Tombol toggle musik */
 #music-toggle {
   margin-top: 10px;
   padding: 5px 10px;
@@ -83,4 +89,21 @@ body {
   border-radius: 8px;
   cursor: pointer;
   display: none;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 600px) {
+  #confession-text {
+    font-size: 1.4em;
+  }
+
+  #reveal-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  #music-toggle {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
 }
