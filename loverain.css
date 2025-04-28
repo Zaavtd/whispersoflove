@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top, #ffb6b9, #fae3d9);
+  font-family: 'MyLoveFont', cursive;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#love-container {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  height: 500px;
+  background: rgba(255, 111, 145, 0.7); /* Transparan 70% */
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+}
+
+#confession-text {
+  font-size: 1.8em;
+  color: white;
+  text-align: center;
+  transition: font-size 0.3s ease;
+  word-break: break-word;
+  overflow-y: auto;
+  max-height: 80%;
+}
+
+.hidden {
+  display: none;
+}
+
+#reveal-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff6f91;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#music-toggle {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #ffa5b0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+}
