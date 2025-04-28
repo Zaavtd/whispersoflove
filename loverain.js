@@ -1,3 +1,10 @@
+window.addEventListener('load', () => {
+  const loadingScreen = document.getElementById('loading-screen');
+  const loveContainer = document.getElementById('love-container');
+
+  loadingScreen.style.display = 'none';
+  loveContainer.style.display = 'flex'; // tampilkan container setelah loading
+});
 const button = document.getElementById('reveal-button');
 const confession = document.getElementById('confession-text');
 const container = document.getElementById('love-container');
